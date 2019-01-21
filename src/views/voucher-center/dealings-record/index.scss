@@ -1,0 +1,127 @@
+@import './../index';
+
+// 来往记录
+.realingrecord-wrap{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background: #F6F6F6;
+  width: 100%;
+
+  .realingrecord-container{
+    width: 100%;
+    .realingrecord-header{
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      margin-right: 0.92rem;
+      width: 100%;
+      height: 0.5rem;
+      padding: 0 0.15rem;
+      display: flex;
+      align-items: center;
+      background-color: #FFFFFF;
+      font-size: .18rem;
+      border-bottom: .01rem solid #EEEEEE;
+      .header-left{
+        width: .09rem;
+        height: .17rem;
+        @include background-image-wrap('./../../../images/arrows.png');
+      }
+      .header-title{
+        color: #000000;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        .header-number{
+          font-style: normal;
+          font-size: .12rem;
+        }
+      }
+    }
+    .realingrecord-details{
+      margin-top: .5rem;
+      .realingrecord-table{
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        background: #ffffff;
+        .realingrecord-table-header{
+          width: 100%;
+          background-color: #F6F6F6;
+          padding: .17rem 0;
+          font-size: .12rem;
+          .realingrecord-header-content{
+            color: #999999;
+            text-align: center;
+          }
+        }
+        &:last-child{
+          margin-bottom: 1rem;
+        }
+        .realingrecord-table-body{
+          padding: 0 .15rem;
+          .realingrecord-item{
+            background-color: #ffffff;
+            padding: .15rem 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            &:not(:last-child){
+              border-bottom: .01rem solid #ccc;
+            }
+            .realingrecord-item-left{
+              height: .5rem;
+              margin-left: .15rem;
+              flex: 1;
+              display: flex;
+              flex-flow: column;
+              justify-content: space-between;
+              .realingrecord-left-pay{
+                font-size: .14rem;
+              }
+              .realingrecord-left-date{
+                font-size: .12rem;
+                color: #999999;
+                padding-top: .05rem;
+              }
+            }
+            .realingrecord-item-right{
+              text-align: right;
+              .realingrecord-right-money{
+
+              }
+              .realingrecord-right-deal{
+                color: #999999;
+                font-size: .12rem;
+                padding-top: .14rem;
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+  .realingrecord-pay{
+    width: 100%;
+    height: .5rem;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    line-height: .5rem;
+    color: #3699FF;
+    font-size: .18rem;
+    .realingrecord-pay-text{
+      box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+
+

@@ -1,0 +1,55 @@
+@import './../index';
+
+.paysucceedconent-wrap {
+  padding-top: 0.5rem;
+  background-color: #FFFFFF;
+  .paysucceedconent-header {
+    .header-title {
+      line-height: 1;
+      font-size: 0.18rem;
+      color: #212121;
+    }
+    .header-right {
+      line-height: 1;
+      font-size: 0.15rem;
+      color: #5895FF;
+    }
+  }
+  .paysucceedconent-list {
+    display: flex;
+    justify-content: center;
+    padding: 0.3rem 0.36rem 0.15rem 0.76rem;
+    .am-steps-item-icon > .am-steps-icon .am-icon {
+      border: .02rem solid #bbb;
+      border-radius: 50%;
+    }
+    .am-steps-vertical .am-steps-item-description {
+      color: #999999;
+    }
+    .am-steps-vertical .am-steps-item-content {
+      padding-left: 0.1rem;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

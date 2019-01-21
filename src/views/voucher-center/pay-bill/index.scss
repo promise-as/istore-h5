@@ -1,0 +1,174 @@
+@import './../index';
+
+// 充值账单
+.paybill-wrap{
+  padding-top: 0.5rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background: #F6F6F6;
+  width: 100%;
+  .paybill-table-header,.paybill-table-cloneheader{
+    width: 100%;
+    background-color: #F6F6F6;
+    padding: .08rem .15rem;
+    font-size: .12rem;
+    .paybill-table-header-h2{
+      font-size: .12rem;
+      color: #212121;
+    }
+    .paybill-table-header-profit{
+      height: .12rem;
+      .paybill-profit-payout, .paybill-profit-income{
+        display: inline-block;
+        float: left;
+        margin-right: .24rem;
+        color: #999999;
+      }
+    }
+  }
+  .paybill-container{
+    width: 100%;
+    .paybill-header{
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      margin-right: 0.92rem;
+      width: 100%;
+      height: 0.5rem;
+      padding: 0 0.15rem;
+      display: flex;
+      align-items: center;
+      background-color: #FFFFFF;
+      font-size: .18rem;
+      border-bottom: .01rem solid #EEEEEE;
+      .header-left{
+        width: .09rem;
+        height: .17rem;
+        @include background-image-wrap('./../../../images/arrows.png');
+      }
+      .header-title{
+        color: #000000;
+      }
+    }
+    .paybill-banner{
+      width: 100%;
+      height: 1.18rem;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .paybill-details{
+      .paybill-table{
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        background: #ffffff;
+        &:last-child{
+          margin-bottom: 1rem;
+        }
+        .paybill-table-body{
+          padding: 0 .15rem;
+          .paybill-item{
+            background-color: #ffffff;
+            padding: .15rem 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            &:not(:last-child){
+              border-bottom: .01rem solid #ccc;
+            }
+            .paybill-item-left{
+              width: .5rem;
+              height: .5rem;
+              @include background-image-wrap('./../../../images/pay-logo.png');
+            }
+            .paybill-item-middle{
+              width: calc(100% - 1.4rem);
+              //border: 1px solid pink;
+              margin-left: .15rem;
+              display: flex;
+              flex-flow: column;
+              .paybill-middle-pay{
+                font-size: .14rem;
+              }
+              .paybill-middle-type{
+                font-size: .12rem;
+                color: #5E5E5E;
+                padding: .02rem 0;
+                display: flex;
+
+                .paybill-middle-typeway{
+                  width: .6rem;
+                }
+                .paybill-labelContainer{
+                  max-width: calc(100% - .6rem);
+                  display: flex;
+                  flex-flow: row nowrap;
+                  overflow-y: auto;
+                  .paybill-middle-label{
+                    border: 1px solid #3699FF;
+                    color: #3699FF;
+                    margin-left: .04rem;
+                    padding: .01rem .04rem;
+                    border-radius: .02rem;
+                    text-align: center;
+                    vertical-align: middle;
+                    white-space: nowrap;
+                  }
+                }
+
+              }
+              .paybill-middle-date{
+                font-size: .12rem;
+                color: #999999;
+              }
+            }
+
+            .paybill-item-right{
+              width: .9rem;
+              text-align: right;
+              .paybill-right-money{}
+              .paybill-right-deal{
+                white-space: nowrap;
+                color: #999999;
+                font-size: .12rem;
+                padding-top: .15rem;
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+  .paybill-pay{
+    width: 100%;
+    height: .5rem;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    line-height: .5rem;
+    color: #3699FF;
+    font-size: .18rem;
+    .paybill-pay-text{
+      box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  // 要固定的类
+  .paybill-fixed{
+    position: fixed;
+    left: 0px;
+    top: 0.5rem;
+    z-index: 99;
+    width: 100%;
+  }
+}
+
+
+

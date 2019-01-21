@@ -1,0 +1,102 @@
+@import './../index';
+
+.verifyphoneconter-wrap {
+  padding-top: 0.5rem;
+  .verifyphoneconter-header {
+    .header-left {
+      width: 0.1rem;
+      height: 0.17rem;
+      @include background-image-wrap('./../../../images/arrows.png');
+    }
+    .header-title {
+      line-height: 1;
+      font-size: 0.18rem;
+      color: #212121;
+    }
+    .header-right {
+      line-height: 1;
+      font-size: 0.15rem;
+      color: #212121;
+    }
+  }
+  .verifyphoneconter-title {
+    width: 100%;
+    height: 0.43rem;
+    display: flex;
+    align-items: center;
+    padding-left: 0.25rem;
+    background-color: #F0F0F0;
+    color: #999999;
+    font-size: 0.12rem;
+    line-height: 1;
+    span {
+      color: #3699FF;
+    }
+  }
+  .verifyphoneconter-main-edit {
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    padding: 0.18rem 0.14rem 0.55rem;
+    .edit-info {
+      font-size: 0.15rem;
+      color: #999999;
+    }
+    .edit-input {
+      margin: 0 0.12rem 0 0.15rem;
+      flex: 1;
+      height: 0.44rem;
+      border-radius: 0.03rem;
+      border: 0.01rem solid #EEEEEE;
+      .am-list-item {
+        background: none;
+      }
+      .edit-send {
+        line-height: 1;
+        font-size: 0.15rem;
+        color: #212121;
+      }
+    }
+  }
+  .verifyphoneconter-main-sub {
+    width: 100%;
+    padding: 0 0.38rem;
+    .sub-but {
+      width: 100%;
+      height: 0.4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0.02rem;
+      background-color: #3699FF;
+      color: #FFFFFF;
+      font-size: 0.18rem;
+    }
+    .sub-butdisplay {
+      background-color: #bbbbbb;
+      color: #FFFFFF;
+      pointer-events: none;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

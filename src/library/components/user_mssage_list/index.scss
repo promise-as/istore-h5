@@ -1,0 +1,123 @@
+// userMssageList(用户留言列表)
+.usermssagelist-wrap {
+    padding-top: 0.1rem;
+    .usermssagelist-header {
+        width: 100%;
+        height: 0.5rem;
+        padding: 0 0.1rem;
+        display: flex;
+        justify-content: center;
+        border-bottom: 0.01rem solid #DDDDDD;
+        .usermssagelist-header-item {
+            display: flex;
+            align-items: center;
+            font-size: 0.15rem;
+            transform: all 600ms;
+            span {
+                text-align: center;
+            }
+        }
+        .usermssagelist-header-item:not(:last-of-type) {
+            margin-right: 0.6rem;
+        }
+        .usermssagelist-header-actionitem {
+            transform: translateY(0.01rem);
+            color: #5496FF;
+            border-bottom: 0.02rem solid #5496FF;
+        }
+    }
+    .usermssagelist-list {
+        padding: 0 0.1rem 0;
+        .usermssagelist-list-item {
+            padding-top: .2rem;
+            border-bottom: 1px solid #E6E8EB;
+            .item-containerbase {
+                .item-base {
+                    margin-bottom: 0.1rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+                .item-base-left {
+                    display: flex;
+                    align-items: center;
+                    .item-base-img {
+                        background-color: #FFFAFB;
+                        margin-right: 0.1rem;
+                        width: 0.5rem;
+                        height: 0.5rem;
+                        background-position: center center;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        border-radius: 0.08rem;
+                    }
+                    .item-base-info {
+                        .info-name {
+                            margin-bottom: 0.09rem;
+                            line-height: 1;
+                            font-size: 0.15rem;
+                            color: #5496FF;
+                        }
+                        .info-text {
+                            span {
+                                padding-right: 0.05rem;
+                            }
+                            font-size: 0.12rem;
+                            color: #999999;
+                        }
+                    }
+                }
+                .item-like {
+                    height: 0.26rem;
+                    padding: 0 0.12rem;
+                    background-color: #ffffff;
+                    justify-content: center;
+                    font-size: 0.15rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 0.13rem;
+                    .item-like-img {
+                        margin-right: 0.05rem;
+                        width: 0.12rem;
+                        height: 0.12rem;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        background-size: contain;
+                    }
+                }
+                .item-likedlike {
+                    border: 1px solid #5496FF;
+                    color: #5496FF;
+                    .item-like-img {
+                        background-image: url('./../../../images/component/liked.png');
+                    }
+                }
+                .item-notlike {
+                    border: 1px solid #999999;
+                    color: #999999;
+                    .item-like-img {
+                        background-image: url('./../../../images/component/notlike.png');
+                    }
+                }
+                .item-content {
+                    margin-bottom: 0.2rem;
+                    font-size: 0.15rem;
+                    color: #212121;
+                    line-height: 0.2rem;
+                }
+            }
+            .item-subcontainerbase {
+                background-color: #EFEFF4;
+                padding: 0.1rem;
+                .item-content {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .postsdetailsmainmsg-list-item:not(:last-of-type) {
+            margin-bottom: 0.13rem;
+        }
+    }
+}
+

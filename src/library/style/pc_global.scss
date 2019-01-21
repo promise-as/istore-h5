@@ -1,0 +1,82 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body, button, ul, p, h1, h2, h3, h4, h5, h6, dl, dt, dd {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-overflow-scrolling: touch;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  box-sizing: content-box;
+  font-weight: normal;
+}
+
+body {
+  background: #ffffff;
+  font-family: 'PingFang SC', 'Microsoft YaHei', 'STHeiti', 'sans-serif';
+}
+
+#wancheleyuan-app {
+  font-size: 16px;
+}
+
+li {
+  list-style: none;
+}
+
+i {
+  font-style: normal;
+}
+
+button, input {
+  border: none;
+  outline: none;
+}
+
+input {
+  -webkit-appearance: none;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px rgba(255,255,255,0) inset;
+}
+
+input[type=text]:focus, input[type=password]:focus, textarea:focus {
+  -webkit-box-shadow: 0 0 0 1000px rgba(255,255,255,0) inset;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  border: none;
+}
+
+// 弹框滚动穿透
+.model-open {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 800px;
+  overflow: hidden;
+}

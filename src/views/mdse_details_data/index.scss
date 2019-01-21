@@ -1,0 +1,15 @@
+@import './../../library/style/phone_global.scss';
+@import './../../library/components/nodata/index.scss';
+* {
+  padding: 0;
+  margin: 0;
+}
+.mdsedetailsdata-wrap {
+  img {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+  }
+}

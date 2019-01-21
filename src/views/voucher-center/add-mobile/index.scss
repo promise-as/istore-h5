@@ -1,0 +1,113 @@
+@import './../index';
+
+// 添加号码
+.addmobile-wrap{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #ffffff;
+  .addmobile-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    margin-right: 0.92rem;
+    width: 100%;
+    height: 0.5rem;
+    padding: 0 0.15rem;
+    display: flex;
+    align-items: center;
+    font-size: .18rem;
+    border-bottom: .01rem solid #EEEEEE;
+    .header-wrap{
+      .header-left{
+        width: .09rem;
+        height: .17rem;
+        @include background-image-wrap('./../../../images/arrows.png');
+      }
+      .header-title{
+        text-align: center;
+        font-size: .18rem;
+        color: #000000;
+      }
+    }
+
+  }
+  .addmobile-banner{
+    width: 100%;
+    height: 2.11rem;
+    margin-top: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .banner-img{
+      width: 2.97rem;
+      height: 1.51rem;
+      @include background-image-wrap("./../../../images/addmobile-banner.png");
+      border: 1px dashed #CCCCCC;
+    }
+  }
+  .addmobile-container{
+    width: 100%;
+    padding: 0 .15rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    .container-input{
+      width: 3rem;
+      height: .45rem;
+      border: .01rem solid #EEEEEE;
+      border-radius: .03rem;
+      padding-left: .16rem;
+    }
+    .container-phonebook{
+      width: .26rem;
+      height: .29rem;
+      @include background-image-wrap("./../../../images/phone-1.png");
+    }
+  }
+  .addmobile-protocol{
+    width: 100%;
+    padding: .15rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size: .11rem;
+    .protocol-details{
+      color: #3699FF;
+    }
+  }
+  .addmobile-choice{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: .67rem;
+    .choice-item{
+      width: 3rem;
+      height: .4rem;
+      border: .01rem solid #3699FF;
+      margin-bottom: .26rem;
+      border-radius: .02rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: .18rem;
+    }
+    .choice-agree{
+      background-color: #3699FF;
+      color: #ffffff;
+    }
+    .choice-notopen{
+      color: #3699FF;
+    }
+  }
+}
+
+
+

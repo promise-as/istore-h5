@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+html, body, button, ul, p, h1, h2, h3, h4, h5, h6, dl, dt, dd, table, tr, td {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-overflow-scrolling: touch;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  font-weight: normal; }
+
+body {
+  background-color: #ffffff !important;
+  font-family: 'PingFang SC', 'Microsoft YaHei', 'STHeiti','sans-serif'; }
+
+#istore-app {
+  font-size: 0.16rem;
+  max-width: 800px;
+  margin: 0 auto; }
+
+.maxwidth {
+  max-width: 800px;
+  margin: 0 auto; }
+
+li {
+  list-style: none; }
+
+i {
+  font-style: normal; }
+
+button, input {
+  border: none;
+  outline: none; }
+
+input {
+  -webkit-appearance: none; }
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset; }
+
+input[type=text]:focus, input[type=password]:focus, textarea:focus {
+  -webkit-box-shadow: 0 0 0 1000px white inset; }
+
+input[type=number] {
+  -moz-appearance: textfield; }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+img {
+  border: none; }
+
+.model-open {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+  max-width: 800px;
+  overflow: hidden; }
+
+.hide {
+  display: none !important; }
+
+.max-limit {
+  width: 100%;
+  max-width: 800px;
+  left: 50% !important;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%); }
+
+html, body, #app, .lifeservices-wrap {
+  height: 100%; }
+
+.lifeservices-wrap {
+  background-color: #F6F6F6; }
+  .lifeservices-wrap .lifeservices-hint {
+    width: 100%;
+    height: 0.46rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+    padding: 0 0.15rem;
+    background-color: #fdf7eb;
+    font-size: 0.22rem;
+    color: #f4b858;
+    line-height: 1; }
+    .lifeservices-wrap .lifeservices-hint .lifeservices-hint-img {
+      width: 0.185rem;
+      height: 0.185rem;
+      margin-right: 0.1rem;
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtEAYAAABqij7ZAAABU2lDQ1BEaXNwbGF5IFAzAAAoz2NgYFJJLCjIYWFgYMjNKykKcndSiIiMUmB/yMAOhLwMYgwKicnFBY4BAT5AJQwwGhV8u8bACKIv64LMOiU1tUm1XsDXYqbw1YuvRJsY8AOulNTiZCD9B4hTkwuKShgYGFOAbOXykgIQuwPIFikCOgrIngNip0PYG0DsJAj7CFhNSJAzkH0DyFZIzkgEmsH4A8jWSUIST0diQ+0FAW6XzOKCnMRKhQBjBqqDktSKEhDtnF9QWZSZnlGi4AgMpVQFz7xkPR0FIwNDcwYGUJhDVH8OBIclo9gZhFjzfQYG2/3////fjRDz2s/AsBGok2snQkzDgoFBkJuB4cTOgsSiRLAQMxAzpaUxMHxazsDAG8nAIHwBqCe6OM3YCCzPyOPEwMB67///z2oMDOyTGRj+Tvj///ei////LgZqvsPAcCAPABUhZe64atgcAAAACXBIWXMAAAsTAAALEwEAmpwYAAAGRGlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDIgNzkuMTYwOTI0LCAyMDE3LzA3LzEzLTAxOjA2OjM5ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtbG5zOmV4aWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20vZXhpZi8xLjAvIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0RXZ0PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VFdmVudCMiIHBob3Rvc2hvcDpEYXRlQ3JlYXRlZD0iMjAxOC0wOC0wNFQxNzo0MDowNSIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgcGhvdG9zaG9wOklDQ1Byb2ZpbGU9IkRpc3BsYXkgUDMiIGV4aWY6VXNlckNvbW1lbnQ9IlNjcmVlbnNob3QiIHhtcDpDcmVhdGVEYXRlPSIyMDE4LTA4LTA3VDA5OjQ3OjIxKzA4OjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAxOC0wOC0wN1QwOTo0OTo1NCswODowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAxOC0wOC0wN1QwOTo0OTo1NCswODowMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6Y2E0MzkzMzgtYjRlOC02YTQ2LTg2NjEtZDRiNjQ0YmIwZjc4IiB4bXBNTTpEb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6ZDEzMTk3NmItNjQ2NC0zYjRhLWI0ZTMtYWMxMGYwODZjMWRhIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6NDU0Nzk4ODAtNGI4Yi01YzRmLWJlOWUtZGM4YzU3ODNhNjlhIj4gPHhtcE1NOkhpc3Rvcnk+IDxyZGY6U2VxPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6NDU0Nzk4ODAtNGI4Yi01YzRmLWJlOWUtZGM4YzU3ODNhNjlhIiBzdEV2dDp3aGVuPSIyMDE4LTA4LTA3VDA5OjQ5OjU0KzA4OjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOCAoV2luZG93cykiIHN0RXZ0OmNoYW5nZWQ9Ii8iLz4gPHJkZjpsaSBzdEV2dDphY3Rpb249InNhdmVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOmNhNDM5MzM4LWI0ZTgtNmE0Ni04NjYxLWQ0YjY0NGJiMGY3OCIgc3RFdnQ6d2hlbj0iMjAxOC0wOC0wN1QwOTo0OTo1NCswODowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTggKFdpbmRvd3MpIiBzdEV2dDpjaGFuZ2VkPSIvIi8+IDwvcmRmOlNlcT4gPC94bXBNTTpIaXN0b3J5PiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pn/Q8iIAAATDSURBVGje7Zvda1xFFMDvm0IL5qkPhYHqX+Cbgg4I+gekhYSqHbugiUgFg2DV6tT0zdY+NFKpImMKxQgibXwzcSddpel32NjFWKmjAW01irLQ3v3M2fXO3T3buJ/dtXvv2e0mkMPu3nvnzC+zZ845c45T9H8cJ2yZE7/Ik/yRRzPiCjvCX5lIy8t8Uh8+mFKL6tXkzAlXnxYvxGLaZfPq2Uh8CV/j53g93o/PozK/wAfMw5o6J++734I4xTywsCKOmUgkLS/pCtgjRUixb/me2SK4egHGHE+KKHtuuAi3YE4/ffz2a/wcr8f78Xn4fBwPx+870Hl5g8fkli0Z8z0cEx5QdsG8FTs65ZrTZvwJHxzf6YG5Zb7SOx/ugiw/H8fD8VEf1K/nQOOKyfKrQvGR0ZQ+K1+LTCtciV0D2v4/wNcH9UN9u7Xi76KN/Rm+gMcer6xY/jXbtY0Q2BYS9UX9cT5kQGflj3oatu+wX82x1ehcr4BtCb48H5xfaKAzKiHfZ3te9jYltXvo/GK/AK4BXp4fzjcw0Bm2zA7xffs8N4s/M5z4rl8B1wAvzxfn3zXQvpvk7dL3GuCGwMtu410DnQXDPoMnn+p3E9GpSUE+HYPOmz/UIntgiNom5wcqs+iW3Zb4flibJvJqG7SNrN5JHj5IyQsY9wIPu4I+Z0VYZ3+yixskvo/XBa0f8rpj0Hn2m5hXDz5U8ivjS1RAZ/U1/ikvQlGCzAlPQtH4f1GW38frwvHD40vIryXolDknX9/28UfUbGKBufoG1AFcJfG6sPREfg1B58V1vcC3bi2FpvS8il4BjfyQZw3oDF+G99TevVR3ed8kKLqmo1oizxrQromJ8WG6IbS/ySXpboa1+pZ4VkDnYY0tqk2bS+nElUQP+K+k3Lvm6dmVhOV7lm3a7GTFVf2JGhkdBCJdMnmWL4yMOmkTZ++y/fupKJbmF4WMtC/tV/XFCD3QyNdJwXnz5vEPP6Ci2Lr+G65A+9Lmkd+epAca+Tqls7YvT1FRrJX7ViNNUXq/kBJn2MQQQdBlvo4ro7B7mU6yqHqlFiCnbvImfrPOsqTws2pqF0HQyJcc6GrbW+ApviYag14Xf8klQ9hLQtDUTMd/0pATHkqWVynWGHTWXFMzQBd0xXRQ2ww35AzgjUhrG22zZgckYdC4Gfruh6Tj3lX8T/6DUaoJ6HLI7aoF+fwkXdDI1w9YpsX2HdQUzOvf9ZkmoEHfFKvQGwGL5etgiEgmBLfZr2TrTTAHv4p5Rhh0dQhOLankwjfipWEPpS5IaLIJ2uP/o4xyXYjHc3ZDUolamjQNcXWI3WGAQtg2+zyhTpo06MR/o5yFPQqKmiagxTrkuPU2LvMDsCHXYb8Js1Rq+pok/oM+ymqUsyiojPpHtvA2dO19GZlgU4qEW9r8KCvow9m2cxotZNb8xMIMXNo+nA2q3KDTLF0jGfaKbrvcIKgCmk7zzg3z0SHZ6P9dQDMoCQuoJKxukaMZFDl2rchxULYbcNluvUL0KXVvFaLb+Q5aK/q1tWLQLDRof+vv9rdOGjrHVoNt6LTj9U1DZzstyid1VYuywBblmRN41lZqQY7OlVqSL13ApA2+xs/xery/XouyHS+sFuV/AX/9GsY3dqHpAAAAAElFTkSuQmCC);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain; }
+    .lifeservices-wrap .lifeservices-hint .lifeservices-hint-info {
+      -ms-flex: 1 1;
+          flex: 1 1;
+      line-height: 1; }
+    .lifeservices-wrap .lifeservices-hint .lifeservices-hint-delete {
+      width: 0.11rem;
+      height: 0.11rem;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAABqklEQVRYhb3WvYoTURgG4CcHBBFhaztZxCuQTWWxIIIQtdFyGy8huQir3ILYWaiwxYKwIIsIkohYaiHY2lhqECzGIlGz+Zmf85OvPHPOzMOZM987vWoyvI7HuIm3ONIfz5Su6WgPz3AHn3C/V02GX3BtadoZBkVBc8gpDpZGPwTsr0w9xInp6PIOIXAj4PmGJYd4vVi4Cwi8Cnhk/mpW6wCn2UD1kDM8CIuzMSgKaoYM9MezAEVBLSEQ/g2XAHWAnMfkBnWErGNygSIgmzGpoEjIdkwsKAFSj+kKSoRAr6qqWs/iQZdwYt6ZV+s9Hpp38mhIe0wz6DcupEC6YZpBSRCazsxq1Z+hJAhdd+ZvTUdX8BUXN1z9hX398beut+22M3PIHo63QCzGj2OyrBum/vNdrqgsa4+ph/zMAWqHaW5oV2UI12ZMu876XYa0r8d0afEZ0n47JiZrEkGbMSmhlwBax2RI31jQeUwOSALoPyYnJBIUikEiQL1qMiwHWa7mH7TbAS+KQ2izQ08DbhWHtAPdC3i3E0gz6HPAET7iB54UhayDXmKGN7j7B4ZCJgqhRQu8AAAAAElFTkSuQmCC);
+      line-height: 1;
+      cursor: pointer; }
+
+.lifeservices-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  height: 0.5rem;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 0 0.15rem;
+  background-color: #FFFFFF; }
+  .lifeservices-header .lifeservices-header-left {
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 0.1rem; }
+    .lifeservices-header .lifeservices-header-left .left-img {
+      width: 0.09rem;
+      height: 0.17rem;
+      margin-right: 0.05rem;
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAiCAYAAABStIn6AAABx0lEQVRIia3WTahMYRgH8N9cH0Viw4pssBELm2trrroWbreE8lHKXRwf2SlXFspCPpe6zFCifCzIR1m46Y7sWCnsWChWbCjXgovFe47eTjPjvCfP7v9v+k0z73uemUar1VJz5uIatuHC7JrILNzGljwfGqiJXI8QuJsKNXAZu6Kug7EUqIEJ7I26ZxjJsmw6BTqH/VF+gdEsy6ahKnQah6P8EsP4UhRVoGMYj/LrMlIFGsfJKL/FED6VX9gPOiB8pGLeodkN6QdlwgkV8xEb8aHXu3aDduNiCdmA972QbtB24dYW/WdsEr6bvhNDo7hRQobw5l9IDA3jDubk+StG8KoKUkBN3I+Qbzn8vCpSQLcwL+qOpyIF9F9mADvxPepOYH0dqCOc2I+8W4BJDKZC8ETYvQW2EI+wNhWCh8Lm+5XnxZjC6lSIcJf2lLBJrEyFCLd7X5SX4imWp0JwBQdL2BSWpUKEDRBvxhU5tiQVgrPCqi1mVS+sys0+hTNRXoPHWJQKwVGcj/I64TT/YinP2hFcivIgHrTb7fnQSPw30hBOdCzqOtic+vT/Fn4YbkZdE1frrJEZ4fbfi7qtdffRDHYIS/EnJv4A8UFbmEAPibsAAAAASUVORK5CYII=);
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat; }
+    .lifeservices-header .lifeservices-header-left .left-text {
+      margin-left: 0.05rem;
+      font-size: 0.16rem;
+      color: #999999;
+      line-height: 1; }
+  .lifeservices-header .header-wrap-center {
+    font-size: 0.16rem;
+    color: #212121;
+    line-height: 1; }
+  .lifeservices-header .lifeservices-header-right {
+    -ms-flex: 1 1;
+        flex: 1 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    padding-left: 0.1rem;
+    height: 0.35rem;
+    border: 0.01rem solid #EEEEEE;
+    border-radius: 0.15rem; }
+    .lifeservices-header .lifeservices-header-right .header-right-img {
+      width: 0.12rem;
+      height: 0.12rem;
+      margin-right: 0.06rem;
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAZCAYAAAArK+5dAAADpklEQVRIS62WXWhcRRTH//+p5oMglKg1sWpV/KAFjUXBF4WGUH1QixA30FqiQXZnrsHUB4Niq95qRSiYB6HcmZvgqkErUpD4UaSNKNaCD0IVC6UqqK2weWiphtqwaXaOzLIb8tkkrgO77J059/zO+Z97zl1ikeWcu0pEtpJ8UETuBLCGZAlAgeQxEflsfHz8QH9//z+L+Qj7nHs4MDDQ2NTUtBPAswCaLnUzgDMi8urY2Ni+OI79QrazAEmS3KiU+gTAHcFYRDzJIwC+BXCa5Crv/U1KqXYRuXuGw9G6urpMT0/PX3Mh04ChoaF1pVLpKIC15dTI/SR3ZrPZ3xaKLEmSjUqpNwG0V86PFYvFTX19feMz7cuAOI4bWlpaviPZBuAigKzW+t0l5AkZMk3TVwCET7geMcY8Og+QJEmslCobAXhyOc5nOnHOvQHghUrmW3O53IfVc+bz+dWTk5OnAFwRZMnlctuWinzueSaTWdXR0REUuAfAz4VCYX216LTWGpIJgJL3/pYoin5fKSDYW2s3kzwUfnvv26Mo+rqckXNuBMAWAKNa683/xXnlnhDsHySvB7BXa/18GWCtPVXZ3KW1fr0GQMhimOR2ETlsjHmgmkF4ai4D8LjW+oNaAGma7haRlwEc11qXeylIFNpfKaUy2Wz2QC0Aa+0ukq8BOKG13lAFnAFwJYAdWuu3agTsI/k0yaO5XO6+ag2+IXm/iLxvjNleC8A59z2AMEKGtNbZKmA3yaDb342NjWu7u7svOR0XC8BaeyvJk0F2EdlmjNlfBqRpepuInAh1EJEXjTGhK1e8nHPvAHgiBDo1NXVdb2/v+TIgfDnnPgKQAXDBe39vFEXHV0Jwzj0E4NNK9HuMMS9Nj4oK4AYAPwJYLSKnAXQYY35ZDsQ5F4p5MIwaAL8CaNNaX5gFCBdpmj4sIh+HnhCRcyLyTBRFoS9kIZBz7nKSO0RkD4D6is1zWuswwqfXrBeOtfYxksMAGioWPwEYVkodmZiY+LO+vl55728m2U4y6L1uDvyiiHQaY4Jc5TXvlZmm6V3e+7dJblyORAAOicheku8BuBZAEUCn1vrzBQFhM45j1dra2ikiT5HcNEOCKvM8yS+899YY82XYHBwcXO+9/wrANSISII8YYw7Py2Bu1Pl8vqFYLN7uvb9aKRXqUWhubj7Z1dUVRsysZa3dQDJA1ojIhFJqy5KAZco0bWatbSM5CiD87Tn7vwMCqQIZEZEf/gUXW35nCnR2PQAAAABJRU5ErkJggg==);
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat; }
+    .lifeservices-header .lifeservices-header-right .header-right-text {
+      line-height: 1;
+      font-size: 0.12rem;
+      color: #999999; }
+
+.lifeservices-apps {
+  width: 100%;
+  padding: 0.2rem 0.15rem 0.05rem;
+  background-color: #FFFFFF; }
+  .lifeservices-apps .lifeservices-apps-title {
+    font-size: 0.17rem;
+    color: #212121;
+    line-height: 1;
+    margin-bottom: 0.15rem; }
+  .lifeservices-apps .lifeservices-apps-list {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: auto;
+    grid-row-gap: 0.11rem; }
+    .lifeservices-apps .lifeservices-apps-list .apps-list-item {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-align: center;
+          align-items: center; }
+    .lifeservices-apps .lifeservices-apps-list .list-item-img {
+      width: 0.34rem;
+      height: 0.34rem;
+      margin-bottom: 0.10rem;
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .lifeservices-apps .lifeservices-apps-list .list-item-text {
+      text-align: center;
+      font-size: 0.13rem;
+      line-height: 1;
+      color: #212121; }
+
+.lifeservices-firstapps {
+  padding: 0.6rem 0.15rem 0.2rem;
+  margin-bottom: 0.15rem; }
+
+.clone-lifeservices {
+  position: fixed;
+  left: 0px;
+  top: 0.5rem;
+  z-index: 99;
+  width: 100%; }
+  .clone-lifeservices .lifeservices-body-navs {
+    white-space: nowrap; }
+
+.lifeservices-body {
+  padding-top: 0.15rem;
+  background-color: #FFFFFF; }
+
+.lifeservices-body-navs {
+  width: 100%;
+  padding: 0px 0.15rem;
+  overflow: auto;
+  background-color: #FFFFFF; }
+  .lifeservices-body-navs .body-navs-container {
+    height: 100%;
+    overflow: hidden;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap; }
+  .lifeservices-body-navs .navs-item:not(last-of-type) {
+    margin-right: 0.25rem; }
+  .lifeservices-body-navs .navs-item {
+    position: relative;
+    padding: 0.08rem 0;
+    display: inline-block;
+    overflow: hidden;
+    color: #212121;
+    font-size: 0.15rem;
+    line-height: 1;
+    white-space: nowrap; }
+  .lifeservices-body-navs .navs-actionItem:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0.05rem;
+    right: 0.05rem;
+    height: 0.02rem;
+    border-radius: 0.01rem;
+    background-color: #6199F0; }
+
+.lifeservices-body-content {
+  padding-bottom: 0.32rem; }
+  .lifeservices-body-content .lifeservices-apps:first-of-type .lifeservices-apps-title {
+    display: none; }
+

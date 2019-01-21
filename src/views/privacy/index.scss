@@ -1,0 +1,72 @@
+@import './../../library/style/phone_global.scss';
+
+// 隐私
+.privacywrap{
+  font-family: "Helvetica Neue",Helvetica,"segoe UI Light",microsoft yahei;
+  color: #3E3E3E;
+  background: #F3F4F4;
+  padding: .15rem;
+  .privacy-h1{
+    font-size: .2rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  .privacy-h2{
+    margin-top: .1rem;
+    font-size: .18rem;
+    font-weight: bold;
+    &+.privacy-content{
+      margin-top: .05rem;
+      .privacy-a{
+        color: #FF870A;
+      }
+    }
+  }
+  .privacy-content{
+    line-height: 1.5;
+    margin-top: .22rem;
+    .privacy-a{
+      color: #FF870A;
+      word-break: break-all;
+    }
+  }
+  strong, em{
+    font-weight: bold;
+    font-style: normal;
+    color: #333;
+  }
+  .privacy-h3{
+    font-size: .17rem;
+    font-weight: bold;
+    margin: .1rem 0 0;
+  }
+  .privacy-ul{
+    margin-top: .05rem;
+    margin-left: .2rem;
+    > li{
+      list-style: decimal;
+      margin-bottom: .05rem;
+      > ul{
+        margin-top: .05rem;
+        margin-left: .2rem;
+        > li{
+          list-style:circle;
+        }
+      }
+    }
+  }
+  .footer {
+    text-align: right;
+    margin-bottom: .2rem;
+  }
+  // 英文样式
+  .privacy-en{
+    margin-top: .05rem;
+    margin-left: .2rem;
+    > li {
+      list-style: none;
+      margin-bottom: .05rem;
+    }
+  }
+}
+

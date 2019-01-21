@@ -1,0 +1,196 @@
+@import './../../library/style/phone_global.scss';
+
+.shopgps-wrap {
+  padding-top: 3.45rem;
+  .shopgps-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    padding: 0 0.1rem;
+    height: 0.55rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+  }
+  .shopgps-header-left {
+    margin-right: 0.1rem;
+    font-size: 14px;
+    color: #969799;
+    white-space:nowrap;
+  }
+  .shopgps-header-input {
+    padding: 0 0.1rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    height: 0.3rem;
+    background-color: #e6e8eb;
+    .input-icon {
+      width: 13px;
+      height: 13px;
+      margin-right: 10px;
+      @include background-image-wrap('./../../images/search.png');
+    }
+    .input-text {
+      width: calc(100% - 0.23rem);
+      margin-left: 0.1rem;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      height: 100%;
+      font-size: 0.1758rem;
+      color: #212121;
+      border: none;
+      background: none;
+      &:focus {
+        outline-style:none;
+        box-shadow:none;
+        border-color:transparent;
+        border: none;
+        background: none;
+      }
+    }
+  }
+  .shopgps-header-right {
+    margin-left: 0.1rem;
+    white-space:nowrap;
+    color: #969799;
+    font-size: 0.14rem;
+  }
+  .shopgps-map {
+    position: fixed;
+    top: 0.55rem;
+    left: 0;
+    z-index: 1;
+    margin-bottom: 13px;
+    width: 100%;
+    height: 2.8rem;
+    border-top: 0.01rem solid #dbdbdb;
+    border-bottom: 0.01rem solid #dbdbdb;
+  }
+  .shopgps-list {
+    padding: 0 0.14rem;
+    .shopgps-list-item:not(last-of-type) {
+      margin-bottom: 0.13rem;
+    }
+    .shopgps-list-item {
+      padding-bottom: 0.12px;
+      border-bottom: 0.01rem solid #f3f4f6;
+      .list-item-info {
+        width: 100%;
+        display: flex;
+        margin-bottom: 0.1rem;
+      }
+      .list-item-info-img {
+        margin-right: 0.1rem;
+        width: 0.69rem;
+        height: 0.9rem;
+        div {
+          width: 100%;
+          height: 100%;
+          background-color: hsla(0,0%,53.3%,.2);
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: contain;
+        }
+      }
+      .list-item-info-basic {
+        flex: 1;
+        padding-top: 0.06rem;
+        .basic-title {
+          display: flex;
+          margin-right: 0.06rem;
+          font-size: 0.16rem;
+          color: #212121;
+          line-height: 1;
+          padding-bottom: 0.08rem;
+          .info {
+            padding-right: 0.05rem;
+          }
+          .icon:not(last-of-type) {
+            margin-right: 0.04rem;
+          }
+          .icon {
+            width: 0.14rem;
+            height: 0.14rem;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+          }
+          .zhifubao {
+            background-image: url("./../../images/zhifubao.png");
+          }
+          .youhui {
+            background-image: url("./../../images/youhui.png");
+          }
+        }
+        .basic-evaluate {
+          display: flex;
+          margin-bottom: 0.1rem;
+          .basic-evaluate-chunk {
+            display: flex;
+            margin-right: 0.04rem;
+            .chunk-item {
+              width: 0.11rem;
+              height: 0.11rem;
+              @include background-image-wrap('./../../images/pingjia.png');
+            }
+          }
+          .basic-evaluate-info {
+            display: flex;
+            font-size: 0.13rem;
+            color: #212121;
+            line-height: 1;
+            span {
+              color: #dc250c;
+            }
+          }
+        }
+        .basic-lable {
+          display: flex;
+          font-size: 0.13rem;
+          color: #999999;
+          line-height: 1;
+          margin-bottom: 0.1rem;
+          .basic-lable-item {
+            margin-right: 0.06rem;
+          }
+        }
+        .basic-info {
+          font-size: 0.13rem;
+          color: #999999;
+          line-height: 1;
+        }
+      }
+      .list-item-info-path {
+        width: 0.25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .path-img {
+          margin-bottom: 0.05rem;
+          width: 100%;
+          height: 0.25rem;
+          @include background-image-wrap('./../../images/luxian.png');
+        }
+        .path-title {
+          text-align: center;
+          font-size: 0.12rem;
+          color: #5093ff;
+        }
+      }
+    }
+    .list-item-footer {
+      width: 100%;
+      display: flex;
+      font-size: 0.12rem;
+      padding: 0.04rem 0.1rem;
+      align-items: center;
+      color: #999999;
+      background-color: #e6e8eb;
+    }
+  }
+
+}

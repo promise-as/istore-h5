@@ -1,0 +1,206 @@
+@import './../index';
+
+// 标签与备注
+.labelremark-wrap{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  background-color: #F6F6F6;
+  .labelremark-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    margin-right: 0.92rem;
+    width: 100%;
+    height: 0.5rem;
+    padding: 0 0.15rem;
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    font-size: .18rem;
+    border-bottom: .01rem solid #EEEEEE;
+    .header-left{
+      width: .09rem;
+      height: .17rem;
+      @include background-image-wrap('./../../../images/arrows.png');
+    }
+    .header-title{
+      color: #000000;
+      text-align: center;
+    }
+    .header-right{
+      color: #212121;
+      font-size: .14rem;
+    }
+  }
+  .labelremark-label{
+    width: 100%;
+    //height: 2.73rem;
+    margin-top: .5rem;
+    padding: .2rem .15rem;
+    background-color: #ffffff;
+    .label-add{
+      border-bottom: .01rem solid #EEEEEE;
+      padding-bottom: .17rem;
+      .label-add-header{
+        display: flex;
+        flex-flow: row nowrap;
+        .label-add-header-img{
+          width: .13rem;
+          height: .17rem;
+          @include background-image-wrap("./../../../images/label-log.png");
+          margin-top: .05rem;
+        }
+        .label-add-header-text{
+          margin-left: .15rem;
+        }
+      }
+      .label-container{
+        display: flex;
+        flex-flow: row wrap;
+        margin-top: .15rem;
+        align-items: center;
+        .label-complete{
+          max-width: 100%;
+          padding: 0 .08rem;
+          line-height: .25rem;
+          border: .01rem solid #3699FF;
+          border-radius: .03rem;
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: center;
+          align-items: center;
+          color: #3699FF;
+          margin: .05rem;
+          margin-left: 0;
+          overflow:hidden;/*文本超出时隐藏*/
+          white-space:nowrap;/*规定表格单元格中的内容不换行。*/
+          .lable-delete{
+            width: .12rem;
+            height: .12rem;
+            @include background-image-wrap("./../../../images/lable-delete.png");
+            margin-left: .05rem;
+          }
+        }
+        .label-add-input{
+          width: 1rem;
+          max-width: 1.5rem;
+          padding: .05rem;
+          box-sizing: border-box;
+        }
+        .label-add-input:focus {
+          outline:none;
+          border: 1px solid #CCCCCC;
+          background:#f0ecec;
+          border-radius: .03rem;
+        }
+      }
+    }
+    .label-item{
+      padding-top: .1rem;
+      padding-bottom: .08rem;
+      .label-item-title{
+        .label-item-title-text{
+          font-size: .14rem;
+        }
+      }
+      .label-item-use{
+        display: inline-flex;
+        align-items: center;
+        height: .25rem;
+        line-height: 1;
+        border: .01rem solid #3699FF;
+        color: #3699FF;
+        border-radius: .03rem;
+        margin-top: .15rem;
+        margin-right: .15rem;
+        padding-left: .08rem;
+        padding-right: .5em;
+        background-color: #ffffff;
+      }
+      .label-item-useaction {
+        background-color: #3699FF;
+        color: #ffffff;
+      }
+    }
+  }
+  .labelremark-remark{
+    width: 100%;
+    height: 3.15rem;
+    background-color: #ffffff;
+    position: relative;
+    margin-top: .15rem;
+    padding: .2rem .15rem;
+    img {
+      width: 100%;
+      display: block;
+      margin: 0.2rem auto;
+    }
+    .remark{
+      border-bottom: .01rem solid #EEEEEE;
+      padding-bottom: .08rem;
+      .remark-title{
+        display: flex;
+        flex-flow: row nowrap;
+        .remark-title-img{
+          width: .13rem;
+          height: .19rem;
+          @include background-image-wrap("./../../../images/remark-logo.png");
+          margin-top: .02rem;
+        }
+        .remark-title-text{
+          margin-left: .15rem;
+        }
+      }
+      .remark-input{
+        width: 100%;
+        margin-top: .2rem;
+        padding: .05rem;
+        line-height: 1;
+      }
+    }
+    .labelremark-addimg{
+      width: 95%;
+      height: 1.44rem;
+      border: 1px solid #CCCCCC;
+      margin: 0 auto;
+      margin-top: .25rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: .03rem;
+      .addimg-container{
+        .addimg-top{
+          width: .2rem;
+          height: .2rem;
+          background: url("./../../../images/addimg.png");
+          margin: 0 auto;
+        }
+        .addimg-bottom{
+          margin-top: .1rem;
+          color: #999999;
+        }
+      }
+    }
+    .labelremark-addimg-input{
+      width: 100%;
+      height: 1.44rem;
+      border: 1px solid #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 1.22rem;
+      left: .25rem;
+      opacity: 0;
+      z-index: 2;
+    }
+  }
+}
+
+
+

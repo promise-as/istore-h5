@@ -1,0 +1,27 @@
+// BannerCarouselList banner轮播图
+.bannercarousellist-wrap {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .bannercarousellist-item {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50%;
+    }
+    .slick-dots {
+        bottom: 0;
+    }
+    .slick-dots li button:before {
+        opacity: 1;
+        color: #ffffff;
+        transform: scale(0.8);
+    }
+    .slick-dots li.slick-active button:before {
+        opacity: 1;
+        color: #5496FF;
+    }
+    .bannercarousellist-item,.bannercarousellist-itemcontainer,.slick-slide,.slick-slide>div,.slick-slider,.slick-list,.slick-track  {
+        width: 100%;
+        height: 100%;
+    }
+}

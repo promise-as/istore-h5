@@ -1,0 +1,140 @@
+@import './../../library/style/phone_global.scss';
+
+.talkdetails {
+    padding-bottom: 0.5rem;
+    .talkdetailsmain-header {
+        background-color: #ffffff;
+        padding: 0.1rem 0.1rem;
+        border-bottom: 0.01rem solid #E6E8EB;
+    }
+}
+
+// TalkDetailsMainWrap(主干)
+.talkdetailsmain-wrap {
+    background-color: #E6E8EB;
+    .talkdetailsmain-header {
+        background-color: #ffffff;
+    }
+    .talkdetailsmain-center {
+        margin-bottom: .12rem;
+        background-color: #ffffff;
+    }
+    .talkdetailsmain-msg {
+        background-color: #ffffff;
+    }
+
+}
+
+//talkdetailsmainheader-wrap(详情主干头部)
+.talkdetailsmainheader-wrap {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    .talkdetailsmainheader-user {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        .user-base {
+            flex: 1;
+            display: flex;
+        }
+        .user-base-images {
+            margin-right: 0.1rem;
+            width: 0.5rem;
+            height: 0.5rem;
+            background-color: #FFFAFB;
+            background-repeat: no-repeat;
+            border-radius: 0.08rem;
+            background-size: cover;
+        }
+        .base-info-time {
+            font-size: 0.12rem;
+            color: #999999;
+        }
+        .base-info-text {
+            display: flex;
+            align-items: center;
+            .base-info-name {
+                margin-right: 0.06rem;
+                font-size: 0.16rem;
+                color: #5496FF;
+            }
+            .base-info-time {
+                font-size: 0.12rem;
+                color: #999999;
+            }
+        }
+    }
+    .talkdetailsmainheader-concern {
+        height: 0.24rem;
+        padding: 0 0.05rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #999999;
+        font-size: 0.12rem;
+        border-radius: 0.1rem;
+        border: 1px solid #999999;
+    }
+}
+
+// TalkDetailsMainContentWrap(主干内容)
+.talkdetailsmaincontent-wrap {
+    padding: 0.14rem 0.1rem 0.3rem;
+    .talkdetailsmaincontent-info {
+        margin-bottom: 40px;
+    }
+}
+
+// TalkDetailsMainContentInfo(主干内容信息)
+.talkdetailsmaincontentinfo-wrap {
+    .talkdetailsmaincontentinfo-video {
+        position: relative;
+        height: 2.6rem;
+        iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+        }
+    }
+    .talkdetailsmaincontentinfo-text {
+        margin-bottom: 0.1rem;
+        font-size: 0.14rem;
+        color: #212121;
+        line-height: 1.2;
+    }
+    .talkdetailsmaincontentinfo-list {
+        width: 100%;
+    }
+    .talkdetailsmaincontentinfo-position {
+        padding-top: 0.1rem;
+        font-size: 0.12rem;
+        color: #5496FF;
+    }
+}
+
+// TalkDetailsMainContentInfoOperation(主干内容操作)
+.talkdetailsmaincontentinfooperation-wrap {
+    display: flex;
+    justify-content: center;
+    .talkdetailsmaincontentinfooperation-item {
+        width: 0.52rem;
+        .item-img {
+            height: 0.52rem;
+            margin-bottom: 0.12rem;
+            background-size: cover;
+        }
+        .item-text {
+            text-align: center;
+            font-size: 0.12rem;
+            color: #FF8140;
+        }
+    }
+}
+
+
+

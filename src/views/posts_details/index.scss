@@ -1,0 +1,487 @@
+@import './../../library/style/phone_global.scss';
+
+.postsdetails {
+    overflow: hidden;
+    .postsdetails-main {
+        background-color: #EFEFF4;
+    }
+    .postsdetailsmain-header,.postsdetailsmain-center {
+        background-color: #ffffff;
+    }
+    .postsdetailsmain-header {
+        margin-bottom: 0.01rem;
+        padding: 0.1rem 0.1rem;
+    }
+    .postsdetailsmain-center {
+        padding: 0.12rem 0.1rem 0.3rem;
+        margin-bottom: 0.12rem;
+    }
+}
+
+// PostsdetailsMain(帖子主干)
+.postsdetailsmain-wrap {
+    .postsdetailsmain-msg {
+        margin-top: 0.12rem;
+        background-color: #ffffff;
+    }
+}
+
+//postsdetailsmainheader-wrap(帖子主干头部)
+.postsdetailsmainheader-wrap {
+    position: relative;
+    margin-bottom: 0.06rem;
+    .postsdetailsmainheader-user {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 0.1rem;
+        .user-base {
+            flex: 1;
+            display: flex;
+        }
+        .user-base-images {
+            margin-right: 0.1rem;
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 0.08rem;
+            background-color: #FFFAFB;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .base-info-time {
+            font-size: 0.12rem;
+            color: #999999;
+        }
+        .base-info-text {
+            display: flex;
+            align-items: center;
+            .base-info-name {
+                margin-right: 0.06rem;
+                font-size: 0.16rem;
+                color: #5496FF;
+            }
+            .base-info-time {
+                font-size: 0.12rem;
+                color: #999999;
+            }
+        }
+        .postsdetailsmainheader-concern {
+            height: 0.24rem;
+            padding: 0 0.05rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #999999;
+            font-size: 0.12rem;
+            border-radius: 0.1rem;
+            border: 1px solid #999999;
+        }
+        .user-base-info {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            justify-content: center;
+        }
+    }
+    .postsdetailsmainheader-num {
+        width: 100%;
+        display: flex;
+        .num-money {
+            flex: 1;
+            font-size: 0.12rem;
+            color: #999999;
+        }
+        .num-browse {
+            display: flex;
+            align-items: center;
+            color: #999999;
+            font-size: 0.12rem;
+            line-height: 1;
+        }
+        .num-browse-text {
+            margin-right: 0.05rem;
+        }
+    }
+    .postsdetailsmainheader-recommend {
+        position: absolute;
+        top: 0.3rem;
+        right: 0.48rem;
+        width: 0.74rem;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+//PostsdetailsmainCenter(帖子内容)
+.postsdetailsmaincenter-wrap {
+    .postsdetailsmaincenter-title {
+        margin-bottom: 0.1rem;
+        font-size: 0.21rem;
+        color: #212121;
+    }
+    .postsdetailsmaincenter-subtitle {
+        display: flex;
+        padding-bottom: 0.18rem;
+        .subtitle-info {
+            line-height: 0.20rem;
+            font-size: 0.12rem;
+            margin-right: 0.08rem;
+            color: #5496FF;
+        }
+    }
+    .postsdetailsmaincenter-doc {
+        margin-bottom: 0.38rem;
+        .doc-sub {
+            font-size: 0.12rem;
+            color: #5496FF;
+        }
+    }
+}
+
+// PostsdetailsmaincenterDocList(内容详情列表)
+.postsdetailsmaincenterdoclist-wrap {
+    .postsdetailsmaincenterdoclist-text,.postsdetailsmaincenterdoclist-img,.postsdetailsmaincenterdoclist-video {
+        margin-bottom: 0.1rem;
+    }
+    .postsdetailsmaincenterdoclist-video {
+        position: relative;
+        height: 2.6rem;
+        -webkit-overflow-scrolling: touch;
+        overflow-y: scroll;
+        iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            min-width: 100%;
+            *width: 100%;
+            left: 0;
+            top: 0;
+        }
+    }
+    .postsdetailsmaincenterdoclist-text {
+        font-size: 0.17rem;
+        color: #212121;
+        line-height: 0.26rem;
+        word-wrap: break-word;
+    }
+    .postsdetailsmaincenterdoclist-img {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
+        .img-title {
+            padding: 0.1rem;
+            width: 100%;
+            font-size: 0.17rem;
+            color: #FFFFFF;
+            line-height: 0.26rem;
+            background-color:rgba(0, 0, 0, 0.7);
+            //::-webkit-scrollbar {
+            //    width: 12px;
+            //}
+            ///* 滚动槽 */
+            //::-webkit-scrollbar-track {
+            //    box-shadow: inset006pxrgba(0,0,0,0.3);
+            //    border-radius: 0.1rem;
+            //}
+            ///* 滚动条滑块 */
+            //::-webkit-scrollbar-thumb {
+            //    border-radius: 0.1rem;
+            //    background: rgba(0,0,0,0.1);
+            //    box-shadow: inset006pxrgba(0,0,0,0.5);
+            //}
+            //::-webkit-scrollbar-thumb:window-inactive {
+            //    background-color: rgba(255,0,0,0.4);
+            //}
+        }
+
+    }
+}
+
+// PostsdetailsmaincenterOperation(内容详情操作-'点赞/打赏')
+.postsdetailsmaincenteroperation-wrap {
+    display: flex;
+    justify-content: space-around;
+    .postsdetailsmaincenteroperation-item {
+        width: 0.48rem;
+        .item-img {
+            margin-bottom: 0.12rem;
+            .item-img-target {
+                width: 0.5rem;
+                height: 0.5rem;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: contain;
+            }
+        }
+        .item-text {
+            text-align: center;
+            font-size: 0.12rem;
+            color: #FF8140;
+        }
+    }
+}
+
+// PostsdetailsmainTyrantRanking(土豪排名榜)
+.postsdetailsmaintyrantranking-wrap {
+    margin-bottom: 0.12rem;
+    background-color: #ffffff;
+    .postsdetailsmaintyrantranking-header {
+        height: 0.5rem;
+        border-bottom: 0.01rem solid #DDDDDD;
+    }
+    .header-block {
+        height: 100%;
+        display: inline-flex;
+        align-items: center;
+        position: relative;
+        padding: 0 0.1rem;
+        border-bottom: 0.02rem solid #5496FF;
+        .header-block-img {
+            width: 0.16rem;
+            height: 0.16rem;
+            @include background-image-wrap('./../../images/component/crown.png');
+        }
+        .block-info {
+            margin-left: 0.06rem;
+            color: #212121;
+            font-size: 0.15rem;
+        }
+    }
+    .postsdetailsmaintyrantranking-list {
+        width: 100%;
+        height: 1.5rem;
+        padding: 0 0.22rem 0.12rem;
+        position: relative;
+    }
+    .postsdetailsmaintyrantranking-list-item {
+        width: 0.96rem;
+        .item-img {
+            margin-bottom: 0.22rem;
+            position: relative;
+            width: 100%;
+            height: 0.74rem;
+        }
+        .item-img-bg,.item-img-bg-logo,.headerimg-target,.item-imag-bg-headerimg,.headerimg-reward-count,.count-img {
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+        .item-img-bg {
+            position: relative;
+            padding-top: 22px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .item-img-bg-logo {
+            position: absolute;
+            top: 0.08rem;
+            right: 0.12rem;
+            z-index: 2;
+            width: 24px;
+            height: 24px;
+        }
+        .item-imag-bg-headerimg {
+            position: relative;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+            background-image: url("./../../images/user-img.png");
+            background-position: center center;
+            background-repeat: no-repeat;
+            .headerimg-target {
+                position: absolute;
+                z-index: 1;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+            }
+            .headerimg-reward-count {
+                position: absolute;
+                left: 0;
+                top: 0.44rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 2;
+                width: 100%;
+                height: 0.22rem;
+                font-size: 0.12rem;
+                color: #ffffff;
+                line-height: 1;
+                .count-img {
+                    display: inline-block;
+                    width: 0.12rem;
+                    height: 0.08rem;
+                    @include background-image-wrap('./../../images/gold.png');
+                    margin-right: 0.02rem
+                }
+            }
+        }
+        .item-name {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            font-size: 0.14rem;
+            color: #212121;
+            text-align: center;
+            @include  limit-line(1);
+        }
+    }
+    .postsdetailsmaintyrantranking-list-item:nth-of-type(1) {
+        position: absolute;
+        top: 0.18rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .postsdetailsmaintyrantranking-list-item:nth-of-type(2) {
+        margin-top: 0.3rem;
+        float: left;
+    }
+    .postsdetailsmaintyrantranking-list-item:nth-of-type(3) {
+        margin-top: 0.3rem;
+        float: right;
+    }
+}
+
+// PostsdetailsmainHonor(荣誉记录)
+.postsdetailsmainhonor-wrap {
+    background-color: #ffffff;
+    .postsdetailsmainhonor-header {
+        height: 0.5rem;
+        border-bottom: 0.01rem solid #DDDDDD;
+    }
+    .header-block {
+        height: 100%;
+        display: inline-flex;
+        align-items: center;
+        position: relative;
+        padding: 0 0.1rem;
+        border-bottom: 0.02rem solid #5496FF;
+        .header-block-target {
+            width: 0.16rem;
+            height: 0.16rem;
+            @include background-image-wrap('./../../images/component/honor.png');
+        }
+        .block-info {
+            margin-left: 0.06rem;
+            color: #212121;
+            font-size: 0.15rem;
+        }
+    }
+    .postsdetailsmainhonor-list {
+        position: relative;
+        padding: 0 0.1rem;
+        div:last-of-type {
+            border-bottom: none;
+        }
+    }
+    .postsdetailsmainhonor-list-home,.postsdetailsmainhonor-list-essence {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: 0.72rem;
+        border-bottom: 0.01rem solid #EFEFF4;
+    }
+    .postsdetailsmainhonor-list-home {
+        .home-info {
+            flex: 1;
+            display: flex;
+            font-size: 0.12rem;
+            color: #212121;
+            .home-info-jmp {
+                display: flex;
+                align-items: center;
+                margin-left: 0.12rem;
+                font-size: 0.12rem;
+                color: #5496FF;
+                .home-info-jmp-target {
+                    width: 0.11rem;
+                    height: 0.11rem;
+                    margin-right: 0.05rem;
+                    @include background-image-wrap('./../../images/component/tag.png');
+                }
+            }
+        }
+        .home-harvest {
+            .home-harvest-money {
+                text-align: right;
+                margin-bottom: 0.1rem;
+                font-size: 0.11rem;
+                color: #FFB400;
+            }
+            .home-harvest-minute {
+                text-align: right;
+                font-size: 0.11rem;
+                color: #ED4C4C;
+            }
+        }
+        
+    }
+    .postsdetailsmainhonor-list-essence {
+        justify-content: center;
+        flex-direction: column;
+        .essence-item {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.08rem;
+        }
+        .essence-item:last-of-type {
+            margin-bottom: 0;
+        }
+        .essence-item-info {
+            font-size: 0.12rem;
+            color: #212121;
+        }
+        .essence-item-num {
+            text-align: right;
+            color: #FFB400;
+        }
+        .essence-item-color {
+            color: #ED4C4C;
+        }
+    }
+}
+
+// PostsdetailsSubmitmsg(发表评论)
+.postsdetailsSubmitmsg-wrap {
+    width: 100%;
+    height: 0.5rem;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.05rem;
+    background-color: #ffffff;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+    .postsdetailsSubmitmsg-textarea {
+        flex: 1;
+        padding: 0.03rem;
+        height: 100%;
+        border: none;
+        font-size: 0.13rem;
+        color: #000000;
+        line-height: 1.3;
+    }
+    .postsdetailsSubmitmsg-textarea::-webkit-input-placeholder {
+        font-size: 0.13rem;
+        color: #5496FF;
+        line-height: 1.3;
+    }
+    .postsdetailsSubmitmsg-sub {
+        width: 0.15rem;
+        height: 0.15rem;
+        background-image: url(./../../images/component/share.png);
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}

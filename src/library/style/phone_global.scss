@@ -1,0 +1,120 @@
+// var
+$header_height : 0.5rem;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, button, ul, p, h1, h2, h3, h4, h5, h6, dl, dt, dd,table,tr,td {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-overflow-scrolling: touch;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  box-sizing: content-box;
+  font-weight: normal;
+}
+
+body {
+  background-color: #ffffff !important;
+  font-family: 'PingFang SC', 'Microsoft YaHei', 'STHeiti','sans-serif';
+}
+
+#istore-app {
+  font-size: 0.16rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.maxwidth {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+i {
+  font-style: normal;
+}
+
+button, input {
+  border: none;
+  outline: none;
+}
+
+input {
+  -webkit-appearance: none;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+}
+
+input[type=text]:focus, input[type=password]:focus, textarea:focus {
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+}
+
+input[type=number] {
+  -moz-appearance:textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  border: none;
+}
+
+// 弹框滚动穿透
+.model-open {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 800px;
+  overflow: hidden;
+}
+
+.hide {
+  display: none !important;
+}
+
+.max-limit {
+  width: 100%;
+  max-width: 800px;
+  left: 50% !important;
+  transform: translateX(-50%);
+}
+
+// scss mixin 
+@mixin limit-line($line: 1) { // $line 限制行数
+  display: -webkit-box;
+  /* autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
+  -webkit-line-clamp: $line;
+  overflow: hidden;
+}
+@mixin background-image-wrap($src) {
+  background-image: url($src);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+

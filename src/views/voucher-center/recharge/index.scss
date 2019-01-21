@@ -1,0 +1,252 @@
+@import './../index';
+
+.rechargeconter-wrap {
+  padding-top: 0.5rem;
+  .rechargeconter-header {
+    .header-left {
+      width: 0.1rem;
+      height: 0.17rem;
+      @include background-image-wrap('./../../../images/arrows.png');
+    }
+    .header-title {
+      line-height: 1;
+      font-size: 0.18rem;
+      color: #212121;
+    }
+    .header-right {
+      line-height: 1;
+      font-size: 0.15rem;
+      color: #212121;
+    }
+  }
+  .rechargeconter-editaddress {
+    width: 100%;
+    padding: 0.22rem 0.15rem 0.16rem;
+  }
+  .rechargeconter-info {
+    width: 100%;
+    margin-bottom: 0.2rem;
+    text-align: right;
+    font-size: 0.12rem;
+    &,a {
+      color: #5895FF;
+    }
+  }
+  .rechargeconter-chargecalls {
+    margin-bottom: 0.2rem;
+  }
+  .rechargeconter-info,.rechargeconter-chargecalls,.rechargeconter-more {
+    padding: 0 0.15rem;
+  }
+  //.rechargeconter-footer {
+  //  width: 100%;
+  //  display: flex;
+  //  flex-wrap: wrap;
+  //  justify-content: center;
+  //  padding-top: 1.38rem;
+  //  .rechargeconter-footer-link {
+  //    a {
+  //      line-height: 1;
+  //      color: #5895FF;
+  //      font-size: 0.12rem;
+  //    }
+  //  }
+  //}
+}
+
+// 编辑手机号码
+.rechargecontereditaddress-wrap {
+  .rechargecontereditaddress-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 0.19rem;
+    border-bottom: 0.01rem solid #F0F2F5;
+  }
+
+  .rechargecontereditaddress-left {
+    flex: 1;
+    .rechargecontereditaddress-left-input {
+      width: 100%;
+      input {
+        width: 100%;
+        font-size: 0.3rem;
+      }
+      .am-list-item.am-input-item {
+        padding-left: 0;
+      }
+      .am-list-item .am-list-line {
+        padding-right: 0;
+      }
+    }
+    .rechargecontereditaddress-left-info {
+      position: relative;
+      font-size: 0.15rem;
+      line-height: 1;
+      .info-attr {
+        color: #999999;
+      }
+      .info-error {
+        color: #F0281F;
+      }
+      .info-list {
+        position: absolute;
+        z-index: 2;
+        transform: translateX(-0.15rem);
+        width: 100vw;
+        padding: 0 0.15rem;
+        background-color: #FFFFFF;
+        border-bottom: 0.01rem solid #949494;
+        .info-list-container {
+          height: 1.38rem;
+          overflow-y: auto;
+          .info-list-item:not(:last-of-type) {
+            border-bottom: 0.01rem solid #EEEEEE;
+          }
+        }
+        .info-list-item {
+          display: flex;
+          justify-content: space-between;
+          padding: 0.15rem 0;
+          font-size: 0.15rem;
+          color: #999999;
+          .item-clear {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(16, 142, 233);
+          }
+        }
+      }
+    }
+  }
+  .rechargecontereditaddress-right {
+    margin-right: 0.05rem;
+    width: 0.26rem;
+    height: 0.29rem;
+    @include background-image-wrap('./../../../images/phone-1.png');
+  }
+}
+
+// 充话费
+.rechargeconterchargecalls-wrap {
+  width: 100%;
+  .rechargeconterchargecalls-title {
+    font-size: 0.18rem;
+    color: #212121;
+    margin-bottom: 0.15rem;
+    line-height: 1;
+  }
+  .rechargeconterchargecalls-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 0.18rem;
+    grid-row-gap: 0.18rem;
+    .rechargeconterchargecalls-list-item {
+      padding: 0.14rem 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #666666;
+      border-radius: 0.03rem;
+      .item-title {
+        margin-bottom: 0.12rem;
+        font-size: 0.15rem;
+        color: #212121;
+        line-height: 1;
+      }
+      .item-price {
+        line-height: 1;
+        font-size: 0.12rem;
+        color: #999999;
+      }
+    }
+    .rechargeconterchargecalls-list-item:active {
+      background-color: #666666;
+      .item-title,.item-price {
+        color: #FFFFFF;
+      }
+    }
+  }
+  .rechargeconterchargecalls-listdisabled {
+    pointer-events: none;
+    opacity: 0.4;
+  }
+}
+
+// 更多充值
+.rechargecontermore-wrap {
+  padding-bottom: 0.2rem;
+  .rechargecontermore-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.15rem;
+    .title {
+      font-size: 0.18rem;
+      color: #212121;
+      line-height: 1;
+    }
+    .all {
+      display: flex;
+      font-size: 0.14rem;
+      color: #999999;
+      line-height: 1;
+    }
+    .all-img {
+      margin-left: 0.06rem;
+      width: 0.08rem;
+      height: 0.14rem;
+      @include background-image-wrap('./../../../images/jiantou-1.png');
+    }
+  }
+  .rechargecontermore-list {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 0.18rem;
+    .rechargecontermore-list-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .item-img {
+        width: 0.3rem;
+        height: 0.3rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        margin-bottom: 0.1rem;
+      }
+      .item-title {
+        font-size: 0.14rem;
+        color: #212121;
+        line-height: 1;
+        text-align: center;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

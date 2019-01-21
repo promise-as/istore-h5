@@ -1,0 +1,272 @@
+@import './../index';
+
+.flowrechargeconter-wrap {
+  padding-top: 0.5rem;
+  .flowrechargeconter-header {
+    .header-left {
+      width: 0.1rem;
+      height: 0.17rem;
+      @include background-image-wrap('./../../../images/arrows.png');
+    }
+    .header-title {
+      line-height: 1;
+      font-size: 0.18rem;
+      color: #212121;
+    }
+    .header-right {
+      line-height: 1;
+      font-size: 0.15rem;
+      color: #212121;
+    }
+  }
+  .flowrechargeconter-editaddress {
+    width: 100%;
+    padding: 0.22rem 0.15rem 0.16rem;
+  }
+  .flowrechargeconter-info {
+    width: 100%;
+    margin-bottom: 0.2rem;
+    text-align: right;
+    font-size: 0.12rem;
+    color: #5895FF;
+  }
+  .flowrechargeconter-chargecalls {
+    margin-bottom: 0.2rem;
+  }
+  .flowrechargeconter-info,.flowrechargeconter-chargecalls,.flowrechargeconter-more {
+    padding: 0 0.15rem;
+  }
+  .flowrechargeconter-package {
+    padding: 0 0.15rem;
+    margin-top: 0.16rem;
+  }
+}
+
+// 编辑手机号码
+.flowrechargecontereditaddress-wrap {
+  .flowrechargecontereditaddress-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 0.19rem;
+    border-bottom: 0.01rem solid #F0F2F5;
+  }
+
+  .flowrechargecontereditaddress-left {
+    flex: 1;
+    .flowrechargecontereditaddress-left-input {
+      width: 100%;
+      input {
+        width: 100%;
+        font-size: 0.3rem;
+      }
+      .am-list-item.am-input-item {
+        padding-left: 0;
+      }
+      .am-list-item .am-list-line {
+        padding-right: 0;
+      }
+    }
+    .flowrechargecontereditaddress-left-info {
+      position: relative;
+      font-size: 0.15rem;
+      line-height: 1;
+      .info-attr {
+        color: #999999;
+      }
+      .info-error {
+        color: #F0281F;
+      }
+      .info-list {
+        position: absolute;
+        z-index: 2;
+        transform: translateX(-0.15rem);
+        width: 100vw;
+        padding: 0 0.15rem;
+        background-color: #FFFFFF;
+        border-bottom: 0.01rem solid #949494;
+        .info-list-container {
+          height: 1.38rem;
+          overflow-y: auto;
+          .info-list-item:not(:last-of-type) {
+            border-bottom: 0.01rem solid #EEEEEE;
+          }
+        }
+        .info-list-item {
+          display: flex;
+          justify-content: space-between;
+          padding: 0.15rem 0;
+          font-size: 0.15rem;
+          color: #999999;
+          .item-clear {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(16, 142, 233);
+          }
+        }
+      }
+    }
+  }
+  .flowrechargecontereditaddress-right {
+    margin-right: 0.05rem;
+    width: 0.26rem;
+    height: 0.29rem;
+    @include background-image-wrap('./../../../images/phone-1.png');
+  }
+}
+
+// 充流量
+.flowrechargeconterchargecalls-wrap {
+  width: 100%;
+  .flowrechargeconterchargecalls-title {
+    font-size: 0.18rem;
+    color: #212121;
+    margin-bottom: 0.15rem;
+    line-height: 1;
+  }
+  .flowrechargeconterchargecalls-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 0.18rem;
+    grid-row-gap: 0.18rem;
+    .flowrechargeconterchargecalls-list-item {
+      padding: 0.14rem 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #666666;
+      border-radius: 0.03rem;
+      .item-title {
+        margin-bottom: 0.12rem;
+        font-size: 0.15rem;
+        color: #212121;
+        line-height: 1;
+      }
+      .item-price {
+        line-height: 1;
+        font-size: 0.12rem;
+        color: #999999;
+      }
+    }
+    .flowrechargeconterchargecalls-list-itemaction {
+      background-color: #666666;
+      .item-title,.item-price {
+        color: #FFFFFF;
+      }
+    }
+  }
+  .flowrechargeconterchargecalls-listdisabled {
+    pointer-events: none;
+    opacity: 0.4;
+  }
+}
+
+// 流量套餐
+.flowrechargeconterchargerpackage-wrap {
+  width: 100%;
+  border-top: 0.01rem solid #F0F2F5;
+  .flowrechargeconterchargerpackage-list {
+    .list-item {
+      padding: 0.12rem 0;
+      width: 100%;
+      border-bottom: 0.01rem solid #F0F2F5;
+      display: flex;
+      align-items: center;
+      .list-left {
+        flex: 1;
+        .list-left-basic {
+          width: 100%;
+        }
+        .basic-title {
+          margin-bottom: 0.08rem;
+          width: 100%;
+          display: flex;
+          align-items: center;
+        }
+        .basic-title-price {
+          margin-right: 0.2rem;
+          font-size: 0.18rem;
+          color: #5895FF;
+          line-height: 1;
+        }
+        .basic-title-discount {
+          display: flex;
+          align-items: center;
+          height: 0.18rem;
+          padding: 0 0.05rem;
+          background-color: #F0281F;
+          color: #FFFFFF;
+          line-height: 1;
+          font-size: 0.12rem;
+        }
+        .basic-subtitle {
+          margin-bottom: 0.1rem;
+          display: flex;
+          align-items: center;
+        }
+        .basic-subtitle-label {
+          margin-right: 0.1rem;
+          display: flex;
+          font-size: 0.12rem;
+          align-items: center;
+          height: 0.17rem;
+          padding: 0 0.04rem;
+          color: #FFFFFF;
+          border-radius: 0.02rem;
+          background-color: #3699FF;
+        }
+        .basic-subtitle-info {
+          font-size: 0.12rem;
+          color: #212121;
+          line-height: 1;
+        }
+        .list-left-infos {
+          display: flex;
+          align-items: center;
+          font-size: 0.12rem;
+          color: #F0281F;
+          line-height: 1;
+          span:not(last-of-type) {
+            margin-right: 0.2rem;
+          }
+        }
+      }
+      .list-right {
+        display: flex;
+        align-items: center;
+        height: 0.24rem;
+        font-size: 0.15rem;
+        line-height: 1;
+        padding: 0 0.04rem;
+        color: #FFFFFF;
+        border-radius: 0.02rem;
+        background-color: #3699FF;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

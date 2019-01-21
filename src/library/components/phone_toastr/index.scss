@@ -1,0 +1,51 @@
+// Toast
+#phonetoast-plugin-wrap {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.1rem;
+  font-size: 0.12rem;
+  background: hsla(0,0%,7%,.7);
+  text-align: center;
+  border-radius: 0.05rem;
+  color: #fff;
+
+  > i {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .icon-wrong {
+    display: block;
+    width: 0.4rem;
+    height: 0.4rem;
+    margin-bottom: 10px;
+    background-image: url('./../../../images/jinggao.png');
+  }
+
+  > span {
+    padding-left: 0.05rem;
+  }
+}
+
+.toast-plugin-success {
+  color: #5FC395;
+}
+
+.toast-plugin-error {
+  color: #E37554;
+}
+
+.toast-plugin-warning {
+  color: #E4D35E;
+}
+
+.toast-plugin-info {
+  color: #67AFFC;
+}

@@ -1,0 +1,21 @@
+@import './../../library/style/phone_global.scss';
+
+.invoice-wrap {
+  width: 100%;
+  padding-top: 0.3rem;
+  .invoice-block {
+    padding: 0 0.16rem;
+    margin-bottom: 0.4rem;
+    .invoice-block-title {
+      font-size: 0.16rem;
+      color: #212121;
+      line-height: 1;
+      margin-bottom: 0.14rem;
+    }
+    .invoice-block-text {
+      font-size: 0.14rem;
+      color: #5E5E5E;
+      line-height: 1.2;
+    }
+  }
+}

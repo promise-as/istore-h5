@@ -1,0 +1,123 @@
+@import './../index';
+
+// 查询余额
+.querybalance-wrap{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  .querybalance-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    margin-right: 0.92rem;
+    width: 100%;
+    height: 0.5rem;
+    padding: 0 0.15rem;
+    display: flex;
+    align-items: center;
+    background-color: #5895FF;
+    font-size: .18rem;
+    border-bottom: .01rem solid #EEEEEE;
+    .header-wrap{
+      background-color: #5895FF;
+      .header-left{
+        width: .09rem;
+        height: .17rem;
+        @include background-image-wrap('./../../../images/arrows-white.png');
+      }
+      .header-title{
+        text-align: center;
+        font-size: .18rem;
+      }
+    }
+
+  }
+  .querybalance-table{
+    width: 100%;
+    background-color: #5895FF;
+    display: flex;
+    .table-container{
+      padding: .21rem .38rem;
+      margin-top: .5rem;
+      width: 100%;
+      .table-header{
+        width: .65rem;
+        height: .17rem;
+        .chian-move{
+          width: 100%;
+          height: 100%;
+          @include background-image-wrap("./../../../images/china-move-2.png");
+        }
+      }
+      .table-body{
+        width: 3rem;
+        height: .45rem;
+        border: 1px solid #ffffff;
+        margin-top: .15rem;
+        border-radius: .03rem;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 .14rem;
+        .table-body-left{
+          color: #ffffff;
+          font-size: .18rem;
+          display: flex;
+          flex-flow: row nowrap;
+          align-items: center;
+          .body-left-operator{
+            color: #AAC9FF;
+            font-size: .14rem;
+            padding-left: .14rem;
+          }
+        }
+        .table-body-right{
+          width: .09rem;
+          height: .17rem;
+          transform: rotate(180deg);
+          @include background-image-wrap('./../../../images/arrows-white.png');
+        }
+      }
+      .table-footer{
+        color: #ffffff;
+        margin-top: .61rem;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        .table-footer-item{
+          text-align: center;
+          line-height: .3rem;
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          align-items: center;
+          .footer-item-bottom{
+            width: .55rem;
+            height: .27rem;
+            background-color: #70A5F7;
+            border-radius: .03rem;
+            line-height: .25rem;
+          }
+        }
+        .table-footer-line{
+          width: .01rem;
+          height: .7rem;
+          background-color: #CCCCCC;
+          margin-top: .2rem;
+        }
+      }
+    }
+  }
+  .querybalance-deadline{
+    font-size: .12rem;
+    padding-top: .25rem;
+  }
+}
+
+
+

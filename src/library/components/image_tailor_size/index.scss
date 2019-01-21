@@ -1,0 +1,13 @@
+.imagetailorsizedom-wrap {
+    overflow: hidden;
+    min-height: 0.5rem;
+    background-color: hsl(0,0%,89%);
+    &,img {
+        width: 100%;
+        height: auto;
+    }
+    img {
+        display: block;
+        float: left;
+    }
+}

@@ -1,0 +1,39 @@
+// Toast
+#toast-plugin-wrap {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 24px;
+  
+    > i {
+      padding-right: 10px;
+    }
+  
+    > span {
+      padding-left: 10px;
+    }
+  }
+  
+  .toast-plugin-success {
+    background: #5FC395;
+  }
+  
+  .toast-plugin-error {
+    background: #E37554;
+  }
+  
+  .toast-plugin-warning {
+    background: #E4D35E;
+  }
+  
+  .toast-plugin-info {
+    background: #67AFFC;
+  }

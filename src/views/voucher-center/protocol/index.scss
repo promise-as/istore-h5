@@ -1,0 +1,41 @@
+@import './../index';
+
+// 手机营业厅服务协议
+.protocol-wrap{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  .protocol-header{
+    .header-wrap{
+      .header-left{
+        width: .09rem;
+        height: .17rem;
+        @include background-image-wrap('./../../../images/arrows.png');
+      }
+      .header-title{
+        text-align: center;
+        font-size: .18rem;
+        color: #000000;
+      }
+    }
+  }
+  .protocol-banner{
+    margin-top: .5rem;
+    font-size: .18rem;
+    padding: .2rem 0;
+  }
+  .protocol-table{
+    padding: 0 .1rem;
+    .table-item{
+      line-height: 1.5;
+      .item-h3{
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+
+

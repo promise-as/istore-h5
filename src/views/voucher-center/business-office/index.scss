@@ -1,0 +1,189 @@
+@import './../index';
+
+.businessofficeconter-wrap {
+  .businessofficeconter-header {
+    .header-wrap {
+      background: none;
+      box-shadow: none;
+    }
+    .header-left {
+      width: 0.1rem;
+      height: 0.17rem;
+      @include background-image-wrap('./../../../images/fanhui-1.png');
+    }
+    .header-title {
+      line-height: 1;
+      font-size: 0.18rem;
+      color: #FFFFFF;
+    }
+  }
+  .businessofficeconter-main {
+    padding: 0.54rem 0 0.18rem;
+    background: linear-gradient(to bottom, #5CB3F9, #4378F2);
+    .businessofficeconter-main-header {
+      padding: 0 0.38rem;
+      .header-logon {
+        width: 0.65rem;
+        height: 0.17rem;
+        margin-bottom: 0.15rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .header-phone {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 0.45rem;
+        padding: 0 0.16rem 0 0.1rem;
+        border: 0.01rem solid #FFFFFF;
+        border-radius: 0.03rem;
+        .header-phone-number {
+          flex: 1;
+          display: flex;
+          align-items: center;
+          margin-right: 0.1rem;
+          font-size: 0.18rem;
+          color: #FFFFFF;
+          line-height: 1;
+        }
+        .phone-number-text {
+          margin-left: 0.1rem;
+          font-size: 0.12rem;
+          color: #AAC9FF;
+          line-height: 1;
+        }
+        .header-phone-img {
+          width: 0.09rem;
+          height: 0.17rem;
+          @include background-image-wrap('./../../../images/fanhui-2.png');
+        }
+      }
+    }
+  }
+  .businessofficeconter-info-checkbalance {
+    padding-top: 0.25rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 0.12rem;
+    color: #212121;
+  }
+  .businessofficeconter-info-serach {
+    padding: 0.25rem 0.4rem;
+    .serach-list {
+      overflow: hidden;
+    }
+    .serach-list-item {
+      float: left;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .serach-list-item-img {
+      width: 0.18rem;
+      height: 0.29rem;
+      margin-bottom: 0.1rem;
+      @include background-image-wrap('./../../../images/phone-3.png');
+    }
+    .serach-list-item-title {
+      line-height: 1;
+      font-size: 0.15rem;
+      color: #212121;
+    }
+  }
+}
+
+// 手机营业厅
+.businessofficecontercheckbalance-wrap {
+  .businessofficecontercheckbalance-info {
+    display: flex;
+    margin-top: 0.6rem;
+    padding: 0 0.45rem;
+    .businessofficecontercheckbalance-info-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #FFFFFF;
+      .item-title {
+        transform: translateX(0.05rem);
+        margin-bottom: 0.17rem;
+        font-size: 0.15rem;
+        line-height: 1;
+        white-space: nowrap;
+      }
+      .item-price {
+        margin-bottom: 0.1rem;
+        font-size: 0.15rem;
+        line-height: 1;
+      }
+      .item-label {
+        display: flex;
+        align-items: center;
+        height: 0.27rem;
+        padding: 0 0.06rem;
+        line-height: 1;
+        font-size: 0.15rem;
+        background-color: rgba(#FFFFFF, 0.2);
+      }
+    }
+    .businessofficecontercheckbalance-info-split {
+      margin: 0.05rem 0.48rem 0;
+      width: 0.01rem;
+      height: 0.75rem;
+      border-right: 0.01rem solid #CCCCCC;
+    }
+  }
+}
+
+// 添加查询
+.businessofficeconteraddsearch-wrap {
+  .businessofficeconteraddsearch-info {
+    margin-top: 0.3rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 0.38rem;
+    line-height: 1;
+    .info-left {
+      flex: 1;
+      .info-left-title {
+        font-size: 0.15rem;
+        color: #FFFFFF;
+        margin-bottom: 0.13rem;
+      }
+      .info-left-subtitle {
+        font-size: 0.12rem;
+        line-height: 1;
+        color: #AAC9FF;
+      }
+    }
+    .businessofficeconteraddsearch-info-img {
+      width: 0.09rem;
+      height: 0.17rem;
+      @include background-image-wrap('./../../../images/fanhui-2.png');
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

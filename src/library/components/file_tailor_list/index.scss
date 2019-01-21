@@ -1,0 +1,64 @@
+.filetailorlist-wrap {
+    width: 100%;
+    .filetailorlist-item {
+        max-width: 4rem;
+    }
+}
+
+.filetailorlist-wraplayouttwo,.filetailorlist-wraplayoutthree {
+    display: grid;
+    grid-column-gap: .07rem;
+    grid-row-gap: .07rem;
+}
+.filetailorlist-wraplayouttwo {
+    grid-template-columns: repeat(2, 1fr);
+}
+.filetailorlist-wraplayoutthree {
+    grid-template-columns: repeat(3, 1fr);
+}
+.filetailorlist-wraplayoutone {
+    grid-template-columns: repeat(1, auto);
+}
+
+// FileTailorSize 文件容器
+.filetailorsize-wrap {
+    position: relative;
+    width: 100%;
+    img {
+        width: 100%;
+        height: auto;
+    }
+    .filetailorsize-bg {
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50%;
+
+    }
+    .filetailorsize-media {
+        position: absolute;
+        z-index: 99;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 4.2rem;
+        color: #fff;
+        background: rgba(0,0,0,.3);
+        border: 0 solid transparent;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        border-radius: 50%;
+        width: 0.66rem;
+        height: 0.66rem;
+        .filetailorsize-media-play {
+            display: block;
+            width: 56%;
+            height: 56%;
+            transform: translateX(3px);
+            background-size: cover;
+            background-image: url('./../../../images/component/play.png');
+        }
+    }
+}
